@@ -1,0 +1,37 @@
+{
+  "name": "modmail-manager-api",
+  "version": "1.0.0",
+  "description": "The backend for modmail-manager",
+  "main": "lib/index.js",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "tsc -p src",
+    "clean": "rimraf ./lib/* && rimraf ./dts/*",
+    "start": "node -r dotenv/config lib/index.js",
+    "watch": "tsc -p src --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyleratti/modmail-manager-api.git"
+  },
+  "author": "a.banana",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kyleratti/modmail-manager-api/issues"
+  },
+  "homepage": "https://github.com/kyleratti/modmail-manager-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-pino-logger": "^5.0.0",
+    "snoostorm": "^1.4.2",
+    "snoowrap": "^1.21.0",
+    "tuckbot-util": "git+https://github.com/kyleratti/tuckbot-util.git"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/express-pino-logger": "^4.0.2",
+    "typescript": "^3.9.5"
+  }
+}
