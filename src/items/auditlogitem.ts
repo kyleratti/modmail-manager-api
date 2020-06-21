@@ -1,26 +1,5 @@
 import { RedditContent } from "snoowrap";
 
-/** JSON
- "kind": "modaction",
-  "data": {
-    "description": null,
-    "target_body": "Trumps americduh",
-    "mod_id36": "6l4z3",
-    "created_utc": 1592696780.0,
-    "subreddit": "PublicFreakout",
-    "target_title": null,
-    "target_permalink": "/r/PublicFreakout/comments/hcsgms/human_trash_hailing_hitler_in_my_town/fvhlih6/",
-    "subreddit_name_prefixed": "r/PublicFreakout",
-    "details": "new account",
-    "action": "removecomment",
-    "target_author": "Zinkyiscool",
-    "target_fullname": "t1_fvhlih6",
-    "sr_id36": "2yrq6",
-    "id": "ModAction_3dab85c4-b350-11ea-ae28-12e35e359864",
-    "mod": "AutoModerator"
-  }
- */
-
 export enum AuditLogAction {
   banuser = "banuser",
   unbanuser = "unbanuser",
