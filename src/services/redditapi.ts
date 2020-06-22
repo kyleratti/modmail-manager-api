@@ -25,8 +25,9 @@ class ExtendedRedditApi {
 
   getAuditLog = (subreddit: string) =>
     new Promise<AuditLogItem[]>((success, fail) => {
-      const test = this._snoowrap
+      this._snoowrap
         // @ts-ignore
+        // this exists on the prototype but is not in the typings file
         ._get({
           uri: `r/${subreddit}/about/log`,
         })
