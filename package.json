@@ -29,9 +29,9 @@
     "tuckbot-util": "git+https://github.com/kyleratti/tuckbot-util.git"
   },
   "devDependencies": {
-    "@types/express": "^4.17.6",
+    "@types/express": "^4.17.7",
     "@types/express-pino-logger": "^4.0.2",
     "snoostorm": "^1.5.0",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.7"
   }
 }
